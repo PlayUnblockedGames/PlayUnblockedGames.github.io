@@ -1,0 +1,14 @@
+# .htaccess (already provided, but included for completeness)
+# Blochează accesul direct la fișiere sensibile
+<FilesMatch "^(config\.php|\.env|\.htaccess)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Varianta mai modernă (Apache 2.4+)
+<Files ~ "^\.">
+    Require all denied
+</Files>
+<Files "config.php">
+    Require all denied
+</Files>
