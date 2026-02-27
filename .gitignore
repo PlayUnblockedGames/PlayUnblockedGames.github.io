@@ -1,0 +1,6 @@
+### Secrets (do not commit)
+chatwithnaruto/config.php
+
+### OS / tooling
+.DS_Store
+Thumbs.db
